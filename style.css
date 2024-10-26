@@ -22,9 +22,10 @@ h1{
     align-items: center;
     padding: 20px ;
     background-color:  rgb(78, 77, 77) ;
+
 }
 form{
-    margin-left: 60px;
+    margin-right: 90px;
     text-align: center;
     display: flex;
     align-items: center;  
@@ -51,7 +52,6 @@ form button{
     padding : 5px;
     flex: 0 1 auto;
     cursor: pointer;
-
 }
 nav ul{
     padding: 9px;
@@ -72,14 +72,66 @@ nav ul li a{
 nav ul li a:hover{
     color: rgb(14, 64, 230);
 }
-.filter select{
-    padding : 9px;
-    border: 2px solid black;
-    border-radius: 10px;
-    cursor: pointer;
+.filter {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+    background-color: rgb(78, 77, 77);
 }
-.filter select:focus{
-    outline: none;
+.filter-toggle {
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    padding: 9px;
+    border: none;
+    border-radius: 5px;
+}
+
+.custom-dropdown {
+    position: relative;
+    margin-left: 5px;
+}
+
+.selected-option {
+    cursor: pointer;
+    color: black;
+    padding: 9px;
+    width: 200px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-size: 15px;
+
+}
+
+.dropdown-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    background-color:  rgb(78, 77, 77) ;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 200px;
+    z-index: 1;
+}
+
+.dropdown-options.show {
+    display: block;
+}
+
+.option {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+
+.option:last-child {
+    border-bottom: none;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
 }
 .slider-container {
     position: relative;
@@ -97,7 +149,6 @@ nav ul li a:hover{
     height: auto;
 }
 
-/* Left and right arrows for navigation */
 .prev, .next {
     position: absolute;
     top: 50%;

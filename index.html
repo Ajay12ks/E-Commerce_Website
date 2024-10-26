@@ -11,32 +11,38 @@
         <h1>Shoppy Buy</h1>
         <section class="header-container">
             <section class="filter">
-                <select name="category">
-                    <option value="All">All Category</option>
-                    <option value="Electronics">Electronics</option>
-                    <option value="Laptops">Laptops</option>
-                    <option value="Smart Phones">Smart Phones</option>
-                    <option value="Home & Kitchen">Home & Kitchen</option>
-                    <option value="Watches">Watches</option>
-                    <option value="Fashion">Fashion</option>
-                    <option value="Books">Books</option>
-                </select>
+                <button class="filter-toggle">Filter</button>
+                <div class="filter-options custom-dropdown">
+                    <div class="selected-option">All Category</div>
+                    <div class="dropdown-options">
+                        <div class="option" data-value="All">All Category</div>
+                        <div class="option" data-value="Electronics">Electronics</div>
+                        <div class="option" data-value="Laptops">Laptops</div>
+                        <div class="option" data-value="Smart Phones">Smart Phones</div>
+                        <div class="option" data-value="Home & Kitchen">Home & Kitchen</div>
+                        <div class="option" data-value="watches">Watches</div>
+                        <div class="option" data-value="Fashion">Fashion</div>
+                        <div class="option" data-value="books">Books</div>
+                        <div class="option" data-value="Perfumes">Perfumes</div>
+                        <div class="option" data-value="toys">Toys</div>
+                        <div class="option" data-value="grocery">Grocery</div>
+
+                    </div>
+                </div>
             </section>
             <form action="">
                 <input type="text" name="" id="" placeholder="Search Products">
-                <button type="submit"><img src="img/search .png" alt="search"></button>
+                <button type="submit"><img src="img\search .png" alt="search"></button>
             </form>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Cart</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Account</a></li>
-            </ul>
-        </nav>
-        
-
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Account</a></li>
+                </ul>
+            </nav>
         </section>
     </header>
     <div class="slider-container">
@@ -61,62 +67,62 @@
     </div>
     <section id="image-container">
         <div class="image-grid">
-            <div class="item">
+            <div class="item" data-category="Laptops">
                 <p>Up to 40% off | Laptops & accessories</p>
                 <div><img src="img\Home\laptop.webp" alt="Laptop"></div>
                 <a href="#">See all offers</a>
             </div>
-            <div class="item">
+            <div class="item" data-category="Smart Phones">
                 <p>Up to 50% off | Smart Phones & accessories</p>
                 <div><img src="img\Home\PHONE.jpg" alt="Smart Phone"></div>
                 <a href="#">See all offers</a> 
             </div>
-            <div class="item">
+            <div class="item" data-category="Fashion">
                 <p>Starting ₹599 | Latest styles from top brands</p>
                 <div><img src="img\Home\JACKET.jpg" alt="Jacket"></div>
                 <a href="#">See all offers</a>                  
             </div>
-            <div class="item">
+            <div class="item" data-category="Fashion">
                 <p>Starting ₹299 | Latest styles from top brands</p>
                 <div><img src="img/Home/SHOES.jpg" alt="Shoes"></div>
                 <a href="#">See all offers</a>
                 </div>
-            <div class="item">
+            <div class="item" data-category="Home & Kitchen">
                 <p>Minimum 50% off | Home, kitchen & more</p>
                 <div><img src="img\Home\BLENDER.jpg" alt="Blender"></div>
                 <a href="#">See all offers</a>                   
             </div>
-            <div class="item">
+            <div class="item" data-category="Electronics">
                 <p>Up to 80% off | Gadgets & accessories</p>
                 <div><img src="img\Home\airbuds.webp" alt="Airbuds"></div>
                 <a href="#">See all offers</a>
             </div>
-            <div class="item">
+            <div class="item" data-category="books">
                 <p>Up to 70% off | Books & Study Materials</p>
                 <div> <img src="img\Home\books.jpg" alt="Books"></div>
                 <a href="#">See all offers</a>               
             </div>
-            <div class="item">
+            <div class="item" data-category="watches">
                 <p>Up to 60% off | Watches</p>
                 <div> <img src="img\Home\watch.jpg" alt="watch"></div>
                 <a href="#">See all offers</a>               
             </div>
-            <div class="item">
+            <div class="item" data-category="Perfumes">
                 <p>Up to 40% off | Perfumes</p>
                 <div> <img src="img\Home\perfume.jpg" alt="perfume"></div>
                 <a href="#">See all offers</a>               
             </div>
-            <div class="item">
+            <div class="item" data-category="grocery">
                 <p>Up to 70% off | Grocery Items</p>
                 <div> <img src="img\Home\grocery.jpg" alt="grocery"></div>
                 <a href="#">See all offers</a>               
             </div>
-            <div class="item">
+            <div class="item" data-category="Home & Kitchen">
                 <p>Minimum 50% off | Home, kitchen & more</p>
                 <div> <img src="img\Home\mixer grinder.jpeg" alt="mixer grinder"></div>
                 <a href="#">See all offers</a>               
             </div>
-            <div class="item">
+            <div class="item" data-category="toys">
                 <p>Up to 60% off | Toys</p>
                 <div> <img src="img\Home\toys.jpg" alt="toys"></div>
                 <a href="#">See all offers</a>               
