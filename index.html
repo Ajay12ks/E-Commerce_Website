@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Shoppy Buy</h1>
+        <section class="header-container">
+            <section class="filter">
+                <select name="category">
+                    <option value="All">All Category</option>
+                    <option value="Electronics">Electronics</option>
+                    <option value="Laptops">Laptops</option>
+                    <option value="Smart Phones">Smart Phones</option>
+                    <option value="Home & Kitchen">Home & Kitchen</option>
+                    <option value="Watches">Watches</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Books">Books</option>
+                </select>
+            </section>
+            <form action="">
+                <input type="text" name="" id="" placeholder="Search Products">
+                <button type="submit"><img src="img/search .png" alt="search"></button>
+            </form>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Cart</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+        </nav>
+        
+
+        </section>
+    </header>
+    <div class="slider-container">
+        <div class="slides">
+            <img src="img/slides/s1.jpg" alt="Image 1">
+            <img src="img/slides/s2.jpg" alt="Image 2">
+            <img src="img/slides/s3.jpg" alt="Image 3">
+            <img src="img/slides/s4.jpg" alt="Image 4">
+            <img src="img/slides/s5.jpg" alt="Image 5">
+        </div>
+        <div class="prev" onclick="moveSlides(-1)">&#10094;</div>
+        <div class="next" onclick="moveSlides(1)">&#10095;</div>
+    
+        <!-- Dots to indicate current slide -->
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </div>
+    <section id="image-container">
+        <div class="image-grid">
+            <div class="item">
+                <p>Up to 40% off | Laptops & accessories</p>
+                <div><img src="img\Home\laptop.webp" alt="Laptop"></div>
+                <a href="#">See all offers</a>
+            </div>
+            <div class="item">
+                <p>Up to 50% off | Smart Phones & accessories</p>
+                <div><img src="img\Home\PHONE.jpg" alt="Smart Phone"></div>
+                <a href="#">See all offers</a> 
+            </div>
+            <div class="item">
+                <p>Starting ₹599 | Latest styles from top brands</p>
+                <div><img src="img\Home\JACKET.jpg" alt="Jacket"></div>
+                <a href="#">See all offers</a>                  
+            </div>
+            <div class="item">
+                <p>Starting ₹299 | Latest styles from top brands</p>
+                <div><img src="img/Home/SHOES.jpg" alt="Shoes"></div>
+                <a href="#">See all offers</a>
+                </div>
+            <div class="item">
+                <p>Minimum 50% off | Home, kitchen & more</p>
+                <div><img src="img\Home\BLENDER.jpg" alt="Blender"></div>
+                <a href="#">See all offers</a>                   
+            </div>
+            <div class="item">
+                <p>Up to 80% off | Gadgets & accessories</p>
+                <div><img src="img\Home\airbuds.webp" alt="Airbuds"></div>
+                <a href="#">See all offers</a>
+            </div>
+            <div class="item">
+                <p>Up to 70% off | Books & Study Materials</p>
+                <div> <img src="img\Home\books.jpg" alt="Books"></div>
+                <a href="#">See all offers</a>               
+            </div>
+            <div class="item">
+                <p>Up to 60% off | Watches</p>
+                <div> <img src="img\Home\watch.jpg" alt="watch"></div>
+                <a href="#">See all offers</a>               
+            </div>
+            <div class="item">
+                <p>Up to 40% off | Perfumes</p>
+                <div> <img src="img\Home\perfume.jpg" alt="perfume"></div>
+                <a href="#">See all offers</a>               
+            </div>
+            <div class="item">
+                <p>Up to 70% off | Grocery Items</p>
+                <div> <img src="img\Home\grocery.jpg" alt="grocery"></div>
+                <a href="#">See all offers</a>               
+            </div>
+            <div class="item">
+                <p>Minimum 50% off | Home, kitchen & more</p>
+                <div> <img src="img\Home\mixer grinder.jpeg" alt="mixer grinder"></div>
+                <a href="#">See all offers</a>               
+            </div>
+            <div class="item">
+                <p>Up to 60% off | Toys</p>
+                <div> <img src="img\Home\toys.jpg" alt="toys"></div>
+                <a href="#">See all offers</a>               
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">           
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are dedicated to bringing you the best products with great quality and affordable prices.</p>
+                <a href="/about">Learn more about us</a>
+            </div>
+    
+            <!-- Customer Service -->
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="/contact">Contact Us</a></li>
+                    <li><a href="/faqs">FAQs</a></li>
+                    <li><a href="/shipping">Shipping & Delivery</a></li>
+                    <li><a href="/returns">Returns & Exchanges</a></li>
+                    <li><a href="/privacy-policy">Privacy Policy</a></li>
+                </ul>
+            </div>
+    
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="/new-arrivals">New Arrivals</a></li>
+                    <li><a href="/best-sellers">Best Sellers</a></li>
+                    <li><a href="/sales">Sales</a></li>
+                    <li><a href="/gift-cards">Gift Cards</a></li>
+                    <li><a href="/size-guide">Size Guide</a></li>
+                </ul>
+            </div>  
+            
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:support@ecommerce.com">support@ecommerce.com</a></p>
+                <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                <p>Address: 1234 E-commerce St., Shopping City, SC 12345</p>
+            </div>
+           
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-media">
+                    <a href="https://facebook.com" target="_blank">Facebook</a>
+                    <a href="https://instagram.com" target="_blank">Instagram</a>
+                    <a href="https://twitter.com" target="_blank">Twitter</a>
+                    <a href="https://pinterest.com" target="_blank">Pinterest</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your E-commerce Site. All rights reserved.</p>
+            <p><a href="/terms">Terms of Service</a> | <a href="/privacy-policy">Privacy Policy</a></p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
